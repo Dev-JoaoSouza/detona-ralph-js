@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+    <link rel="shortcut icon" href="src/images/favicon.jpg" type="image/x-icon">
+    <meta http-equiv="Cache-Control" content="max-age=604800">
+
+    <!-- SEO -->
+    <meta name="author" content="João Dev">
+    <meta name="description" content="Jogo do Detona Ralph - Encontre o inimigo escondido!">
+    <meta name="keywords" content="jogo, detona ralph, jogo do detona ralph, jogo do ralph, jogo do detona, jogo do ralph escondido">
+    <meta name="robots" content="index, follow">
+
+    <!-- protocolo Open Graph -->
+    <meta property="og:title" content="Jogo do Detona Ralph">
+    <meta property="og:description" content="Jogo do Detona Ralph - Encontre o inimigo escondido!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="src/images/ralph.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9f10f7f884.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="menu">
+        <div class="menu-time">
+            <h2 style="color: red;">Time Left</h2>
+            <h2 id="time-left">0</h2>
+        </div>
+        <div class="menu-score">
+            <h2 style="color: red;">Your Score</h2>
+            <h2 id="score">0</h2>
+        </div>
+        <div class="menu-lives">
+            <img src="src/images/player.png" alt="foto do jogador" height="60px">
+            <h2>x3</h2>
+        </div>
+        <h3>Stage 01</h3>
+    </header>
+
+    <main class="panel">
+        <div class="panel-row">
+            <div class="square enemy" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+        </div>
+
+        <div class="panel-row">
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+        </div>
+
+        <div class="panel-row">
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+            <div class="square" id="9"></div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <a href="https://www.linkedin.com/in/joaosouza-dev/" target="_blank">linkedin</a>
+        <a href="https://github.com/Dev-JoaoSouza/" target="_blank">github</a>
+        <p>João Dev 2024-2025</p>
+    </footer>
+
+    <div class="game-screen">
+        <h2>Jogo do Detona Ralph</h2>
+        <p>Encontre o inimigo escondido!</p>
+        <button onclick="initialize()">Start <i class="fa-solid fa-play"></i></button>
+    </div>
+
+    <script src="src/scripts/engine.js"></script>
+</body>
+</html>
