@@ -53,3 +53,6 @@ Aproveite e divirta-se com o **Detona Ralph JavaScript**!
 Se curtir o projeto, não esqueça de deixar uma ⭐️ no repositório!
 
 ---
+
+## Design do projeto no Desktop:
+![image](./src/images/detona-ralph-page.png)
